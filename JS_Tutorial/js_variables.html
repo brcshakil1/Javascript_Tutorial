@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS variables</title>
+</head>
+<body>
+    <h1>JS variables</h1>
+    <p>Variables are container for storing values</p>
+    <p>4 Ways to declare js variables</p>
+    <ul>
+        <li>using var</li>
+        <li>using let</li>
+        <li>using const </li>
+        <li>using nothing</li>
+    </ul>
+
+    <h3>const and let</h3>
+    <p>example: </p>
+    <p>const potato = 10;</p>
+    <p>const tomato = 20;</p>
+    <p>let total = potato + tomato;</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+
+
+    <script>
+         
+        var  a = 25;
+        var  b = 12;
+        var  c = 13;
+
+        var z = a + b - c;
+        console.log(z)
+
+        const d = 45;
+        const e = 30;
+        let f = d + e ;
+
+        console.log(f)
+
+        const potato = 10;
+        const tomato = 20;
+        let total = potato + tomato;
+
+        document.getElementById('demo').innerHTML = 'total price: ' + total + ' taka';
+
+        const carName = "Volvo";
+        document.getElementById('demo2').innerHTML = 'My car name is ' + carName;
+
+        // one statement and many variables
+        let person = "Bayazid", carName2 = "Lamborghini", price = 200;
+        document.getElementById('demo3').innerHTML = 
+        "I am " +
+        person +
+        '. My car ' +
+         carName2 +
+          '. This car price is $' +
+           price + ' millions' ;
+    </script>
+</body>
+</html>

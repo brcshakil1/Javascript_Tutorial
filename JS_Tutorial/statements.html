@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript statements</title>
+</head>
+<body>
+    <h2>In HTML, JavaScript statements are executed by the web browser.</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button onclick="showMe()">Click Me</button>
+
+
+    <script>
+        document.getElementById('demo').innerHTML = 'Hello peoples, I am Bayazid.' ;
+
+        //line break
+        document.getElementById('demo2').innerHTML = 
+        'Hello Shahid!';
+        
+        //code blocks
+        const showMe =() => {
+            document.getElementById('demo3').innerHTML = 'I am bayazid';
+            document.getElementById('demo4').innerHTML = 'Do you know me?'
+        }
+
+        // semicolons separate js statements
+        const x = 56;
+        const y = 66;
+        const result = x + y;
+
+    </script>
+</body>
+</html>
