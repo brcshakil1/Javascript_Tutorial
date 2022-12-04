@@ -9,6 +9,9 @@
 <body>
     <p>Declaring a constant array does NOT make the elements unchangeable:</p>
     <p id="demo"></p>
+    <p></p>
+    <p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+    <p id="demo2"></p>
 
 
     <script>
@@ -19,6 +22,14 @@
         vegetables.shift();
         vegetables.unshift('lemon')
         document.getElementById('demo').innerHTML = vegetables;
+
+        const person = {name: 'Shahid', liveIn: 'Saudi Arabia', age: 24, fColor: 'black'}
+
+        person.fColor = 'White';
+        
+        console.log(person)
+
+        document.getElementById('demo2').innerHTML = person.name;
     </script>
 </body>
 </html>
