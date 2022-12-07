@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+
+    <style>
+        .container{
+            border: 5px solid lightblue;
+            margin: 2rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h2>Object</h2>
+    <div id="friendContainer">
+        
+    </div>
+
+
+    <script>
+        const friends = [
+            {name: "Shahid Ahmed", age: 24, country: 'Bangaldesh', 
+            pAddress: {
+                city: 'Riyad',
+                country: 'Saudi Arabia'
+            }},
+            {name: "Arif Khan", age: 23, country: 'Bangaldesh', 
+            pAddress: {
+                city: 'Moulvibazar',
+                country: 'Bangladesh'
+            }},
+            {name: "Imon Datta", age: 23, country: 'Bangaldesh', 
+            pAddress: {
+                city: 'Moulvibaar',
+                country: 'Bangladesh'
+            }},
+            {name: "Imran Ahmed", age: 24, country: 'Bangaldesh', 
+            pAddress: {
+                city: 'London',
+                country: 'England'
+            }},
+            {name: "Abdus Samad", age: 25, country: 'Bangaldesh', 
+            pAddress: {
+                city: 'Sylhet',
+                country: 'Bangladesh'
+            }},
+        ]
+
+        friends.map((friend, idx )=> {
+            document.getElementById('friendContainer').innerHTML += `
+            <div class="container">
+                <h3> Name: ${friend.name}</h3>
+                <p>Age: ${friend.age}</p>
+                <p>city: ${friend.pAddress.city}</p>
+                <p>country: ${friend.pAddress.country}</p>
+            </div>
+            `;
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Time</button>
+
+    <p id="demo"></p>
+
+    <button onmouseout="displayDate()">Get Hours</button>
+    <p id="demo2"></p>
+
+    <button id="demo3">Get getMilliseconds</button>
+    <p id="demo4"></p>
+
+    <script>
+        const displayDate = () => {
+            document.getElementById('demo2').innerHTML = new Date().getHours();
+        }
+
+        document.getElementById('demo3').addEventListener('mouseover', ()=> {
+            document.getElementById('demo4').innerHTML = new Date().getMilliseconds();
+        })
+    </script>
+</body>
+</html>

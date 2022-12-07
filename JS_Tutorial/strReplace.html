@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace() Method</title>
+</head>
+<body>
+    <h1>String.replace()</h1>
+    <p>Replace "Dubai" with "Dhaka" in the paragraph below.</p>
+    <button onclick="replaceText()">Try it!</button>
+    <p id="demo">Habibi! come to Dubai.</p>
+
+    <button onclick="replaceWithRegExp()">Try it!</button>
+    <p id="demo2">Habibi! come to Dubai.</p>
+
+    <button onclick="globalReplace()">Try it!</button>
+    <p id="demo3">Habibi! come to Dubai, visit Dubai, don't forget to come in Dubai.</p>
+
+    <button onclick="globalReplaceAll()">Try it!</button>
+    <p id="demo4">I am Bayazid. I am like cats. We have 5 cats at home. cats , cats and cats. My mother don't like cats. </p>
+
+
+
+    <script>
+        //replace()
+        function replaceText () {
+            const text = document.getElementById("demo").innerHTML;
+            document.getElementById('demo').innerHTML = text.replace("Dubai", "Dhaka")
+        }
+
+        //replace() insensitive word with RegExp
+        const replaceWithRegExp = () => {
+            const text = document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML = text.replace(/DuBai/i, "Bangladesh")
+        }
+
+        //replace() word with RegExp global match
+        const globalReplace = () => {
+            const text = document.getElementById("demo3").innerHTML;
+            document.getElementById('demo3').innerHTML = text.replace(/Dubai/g, "Moulvibazar")
+        }
+
+        // replaceAll()
+        const globalReplaceAll = () => {
+            const text = document.getElementById("demo4").innerHTML;
+            document.getElementById('demo4').innerHTML = text.replaceAll("cats", "pats")
+        }
+
+    </script>
+</body>
+</html>

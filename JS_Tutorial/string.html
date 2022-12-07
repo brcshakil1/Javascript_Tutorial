@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string</title>
+</head>
+<body>
+    <h1>Javascript String</h1>
+    <h3>Javascript strings are for storing and manipulating text</h3>
+    <h3>A string can be zero or more characters written inside on quotes.</h3>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+        const text = "\"The string are coming inside of script.\"";
+        document.getElementById('demo').innerHTML = text;
+        document.getElementById('demo2').innerHTML = "The character \\ is called backSlash."
+
+        const name = new String('shakil');
+        const name2 = 'shakil';
+        console.log(name === name2)
+        console.log(text.length)
+    </script>
+</body>
+</html>
