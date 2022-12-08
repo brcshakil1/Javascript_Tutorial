@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array method</h1>
+    <p>How to defined if the variable is array.</p>
+    <p>typeOf: Javascript operator typeOf always return an object.</p>
+    <p id="showTypeOf"></p>
+    <p>ECMAScript 5 (JavaScript 2009) defined a new method Array.isArray() to defined the variable is array or not.</p>
+    <p id="demo"></p>
+
+    <script>
+        // typeOf
+        const arr = ["Shahid", "Shakil", "Shamim", "Shaiful"];
+        document.getElementById("showTypeOf").innerHTML = typeof arr;
+
+        // array.isArray()
+        const fruits = ["banana", 'kola', "mango", 'am', 'apple', 'apel' ];
+        document.getElementById('demo').innerHTML = Array.isArray(fruits)
+
+
+
+    </script>
+</body>
+</html>

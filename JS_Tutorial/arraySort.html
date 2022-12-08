@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort</title>
+</head>
+<body>
+    <h1>Array Sort</h1>
+    <p>The sort method sorts an array alphabetically.</p>
+    <p id="demo"></p>
+    <h2>Reversing an array</h2>
+    <p>The reverse() method reverses the elements in an array.</p>
+    <p id="demo2"></p>
+    <button onclick="sortAlpha()">Sort Alphabetically</button> <button onclick="sortNum()">Sort Numerically</button>
+    <p id="demo3"></p>
+
+
+
+    <script>
+        const names= ["Shakil", "Shahid", "Arif", "Emon", "Ipon", "Rahi"];
+        names.sort();
+        document.getElementById("demo").innerHTML = names;
+
+        names.reverse();
+        document.getElementById("demo2").innerHTML = names;
+
+
+        const numbers = [12,  100, 25, 40, 35, 1, 5, 89, 7];
+        document.getElementById("demo3").innerHTML = numbers;
+        const sortAlpha = () => {
+            numbers.sort();
+            document.getElementById("demo3").innerHTML = numbers;
+        }
+
+        const sortNum = () => {
+            numbers.sort((a, b) => a - b)
+            document.getElementById("demo3").innerHTML = numbers;
+        }
+
+    </script>
+</body>
+</html>
