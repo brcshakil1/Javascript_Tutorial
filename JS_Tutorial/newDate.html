@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Date</title>
+</head>
+<body>
+    <h1>new Date()</h1>
+
+    <h4>new Date()</h4>
+    <p id="demo1"></p>
+
+    <h4>new Date(date string)</h4>
+    <p id="demo2"></p>
+
+    <h4>new Date(year, month)</h4>
+    <p id="demo3"></p>
+
+    <h4>new Date(year, month, day)</h4>
+    <p id="demo4"></p>
+    
+    <h4>new Date(year, month, day, hours)</h4>
+    <p id="demo5"></p>
+
+    <h4>new Date(year, month, day, hours, minutes)</h4>
+    <p id="demo6"></p>
+
+    <h4>new Date(year, month, day, hours, minutes, seconds)</h4>
+    <p id="demo7"></p>
+
+    <h4>new Date(year, month, day, hours, minutes, seconds, ms)</h4>
+    <p id="demo8"></p>
+
+    <h4>new Date(milliseconds)</h4>
+    <p id="demo9"></p>
+
+
+    <script>
+        //new Date()
+        document.getElementById("demo1").innerHTML = new Date();
+
+        //new Date(date string)
+        // document.getElementById("demo2").innerHTML = new Date("1997-09-14");
+        document.getElementById("demo2").innerHTML = new Date("Sun Sep 14 1997");
+
+        //new Date(year, month)
+        document.getElementById("demo3").innerHTML = new Date(1997, 8);
+
+        //new Date(year, month, day)
+        document.getElementById("demo4").innerHTML = new Date(1997, 8, 14);
+
+        //new Date(year, month, day, hours)
+        document.getElementById("demo5").innerHTML = new Date(1997, 8, 14, 23)
+
+        //new Date(year, month, day, hours, minutes)
+        document.getElementById("demo6").innerHTML = new Date(1997, 8, 14, 23, 55)
+
+        //new Date(year, month, day, hours, minutes, seconds)
+        document.getElementById("demo7").innerHTML = new Date(1997, 8, 14, 23, 55, 45)
+
+        //new Date(year, month, day, hours, minutes, seconds, ms)
+        document.getElementById("demo8").innerHTML = new Date(1997, 8, 14, 23, 55, 45, 999)
+
+        //new Date(milliseconds)
+        document.getElementById("demo9").innerHTML = new Date(500000000000000)
+
+
+    </script>
+</body>
+</html>
