@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else conditions</title>
+</head>
+<body>
+    <h1>if, else, and else if conditions</h1>
+    <p>Are you feeling alone? No one greeting you? </p>
+    <p>If your answer is affirmative, then you are in right place.</p>
+    <p>Type your time (Only hour's number). Our website will greet you.</p>
+    <input id="hour" type="number" placeholder="Hours">
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+
+    <script>
+        const myFunction = () => {
+            const hour = document.getElementById('hour').value;
+            
+            if(hour < 12) {
+                document.getElementById("demo").innerHTML = "Good Morning my dear friend!";
+            }
+            else if(hour < 18) {
+                document.getElementById("demo").innerHTML = "Good Afternoon my dear friend!";
+            }
+            else if(hour < 22) {
+                document.getElementById("demo").innerHTML = "Good Evening my dear friend!";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "It's too late. Goodnight";
+            }
+            document.getElementById('hour').value ='';
+        }
+    </script>
+</body>
+</html>

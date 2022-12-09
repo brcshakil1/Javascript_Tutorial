@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison</title>
+</head>
+<body>
+    <h2>Comparison</h2>
+
+    <input id="age" type="number" placeholder="Your age"> 
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+
+
+    <script>
+        const myFunction = () => {
+            let about ;
+            const age = Number(document.getElementById("age").value);
+            if(isNaN(age)) {
+                about = 'Input isn\'t a number';
+            }
+            else {
+                about = (age < 20) ? 'you are just a kid. you can wait for get married' : 'it\'s your time men. you should get married soon.';
+            }
+            document.getElementById("demo").innerHTML = about;
+            document.getElementById("age").value = '';
+             
+        }
+    </script>
+</body>
+</html>
