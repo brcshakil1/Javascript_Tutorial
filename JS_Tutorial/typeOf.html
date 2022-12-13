@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeof</title>
+</head>
+<body>
+    <h2>typeof operator</h2>
+    <p id="demo"></p>
+
+
+
+    <script>
+        document.getElementById("demo").innerHTML = 
+        `"Bayazid is "${typeof 'Bayazid'} <br />
+        44.55 is ${typeof 44.55} <br />
+        NaN is ${typeof NaN} <br />
+        false is ${typeof false} <br />
+        true is ${typeof true} <br />
+        {name: 'shakil', id: 52} is ${typeof {name: 'shakil', id: 52}} <br />
+        [45, 12, 23] is ${typeof [45, 12, 23]} <br />
+        new Date() is ${typeof new Date()} <br />
+        function () {} is ${typeof function () {}} <br />
+        myRoom is ${typeof myRoom} <br />
+        null is ${typeof null} <br />
+
+        `
+    </script>
+</body>
+</html>

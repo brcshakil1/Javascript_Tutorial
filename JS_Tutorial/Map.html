@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Map() method</title>
+</head>
+<body>
+    <h2>new Map() method</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+
+    <script>
+        const mapMethod = new Map([ ["TV", 800], ["Phone", 400], ['Laptop', 500]])
+
+        mapMethod.set("DeskTop", 900);
+        mapMethod.set("Frizz", 700);
+        mapMethod.set("Monitor", 350);
+        mapMethod.delete("Frizz");
+        console.log(mapMethod);
+
+        let text = '';
+        mapMethod.forEach((val, key) => {
+            text += key + ' = ' + val + '<br />';
+        })
+        document.getElementById("demo3").innerHTML = text;
+
+        document.getElementById("demo").innerHTML = mapMethod.get("Monitor");
+        document.getElementById("demo2").innerHTML = mapMethod.has("Laptop");
+        
+    </script>
+</body>
+</html>

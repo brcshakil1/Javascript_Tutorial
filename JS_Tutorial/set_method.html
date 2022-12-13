@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Set Method</title>
+</head>
+<body>
+    <h2>Js new Set() method</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        // new Set method
+        const arr = ['a', 'b', 'c', 'a', 'd', 'e', 'c'];
+        const letters = new Set(arr);
+        console.log(letters.size)
+
+        // new Set() and add()
+        const letters2 = new Set();
+        const j = 'j';
+        const k = 'k';
+        letters2.add('f');
+        letters2.add('g');
+        letters2.add('h');
+        letters2.add('h');
+        letters2.add('h');
+        letters2.add('i');
+        letters2.add('g');
+        letters2.add(j);
+        letters2.add(k);
+        console.log(letters2)
+
+        // new Set() with forEach()
+        let text = '';
+        const letters3 = new Set(['l', 'm', 'n', 'o', 'l', 'm']);
+        letters3.forEach(val => {
+            text += val + '<br />'
+        })
+        document.getElementById('demo').innerHTML = text;
+
+        // new Set() with values    ()
+
+        document.getElementById("demo2").innerHTML = letters3.values();
+
+    </script>
+
+
+</body>
+</html>
